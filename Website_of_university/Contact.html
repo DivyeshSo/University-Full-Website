@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/imges/logo.png"></a>
+            <div class="nav-link" id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about-us.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="Blog.html">BLOGE</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>CONTACT US</h1>
+       
+    </section>
+<!-- --------contact---------- us -->
+ <section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119066.54586610789!2d72.7398944333749!3d21.15918020347252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1720178295592!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+ </section>
+ <section class="contactus">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <span>
+                    <h5>Dumas Road,SPD Building</h5>
+                    <p>Surat, Gujarat, India</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                    <h5>+99 9614253455</h5>
+                    <p>Monday to Saturday, 10AM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    <h5>univercity@gmail.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+
+        <div class="contact-col">
+
+            <form action="formheandler.php" method="post">
+                <input type="text" placeholder="Enter Your Name" name="name" required>
+                <input type="email" placeholder="Enter Your email"  name="email"  required>
+                <input type="text" placeholder="Enter Your Subject"  name="Subject"  required>
+                <textarea rows="8" placeholder="Message"  name="Message" ></textarea>
+                <button type="submit" class="hero-btn red-btn"  name="submit" >Send Message</button>
+            </form>
+        </div>
+    </div>
+ </section>
+
+ <!-- --------Footer---------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ratione ipsam reprehenderit,nostrum magnam iure quidem quod <br>  blanditiis cumque et a eaque voluptates impedit deserunt,at error aliquam laboriosam quas.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>   
+        <p>Made With Easy <i class="fa-regular fa-heart"></i> Admition Process</p>
+    </section>
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right = "0";
+        }
+        function hidemenu(){
+            navlinks.style.right = "-300px";
+        }
+    </script>
+</body>
+</html>
